@@ -1,7 +1,14 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 
 const Test = () => {
-  return <div>Test</div>;
+  const [text, setText] = useState('');
+
+  useEffect(() => {
+    axios.get('http://localhost:3030/test').then((res) => setText(res.data)); // useText 대신 setText 사용
+  }, [text]);
+
+  return <div>테스트 : {text}</div>;
 };
 
 export default Test;
