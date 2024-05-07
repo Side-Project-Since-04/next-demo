@@ -10,11 +10,6 @@ export default function Home() {
   //   };
   //   getAuth();
   // });
-  console.log('test');
-  console.log('test2');
-
-  console.log('test3');
-  console.log('test4');
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
