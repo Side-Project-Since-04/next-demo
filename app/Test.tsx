@@ -8,7 +8,7 @@ const Test = () => {
     axios.get('http://localhost:3030/test').then((res) => setText(res.data)); // useText 대신 setText 사용
   }, [text]);
 
-  return <div>테스트 : {text}</div>;
+  return <div>테스트 : 1</div>;
 };
 
 export default Test;
