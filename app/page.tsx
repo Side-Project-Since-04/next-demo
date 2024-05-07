@@ -11,6 +11,7 @@ export default function Home() {
   //   getAuth();
   // });
   console.log('test');
+  console.log('test2');
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
