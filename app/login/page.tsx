@@ -5,10 +5,11 @@ import { useEffect } from 'react';
 
 export default function LoginPage() {
   const onClick = async () => {
-    await signIn('kakao', {
+    const session = await signIn('kakao', {
       redirect: true,
       callbackUrl: '/',
     });
+    console.log(session);
   };
   return (
     <button className="border-2 p-2" onClick={onClick}>
